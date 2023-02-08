@@ -1,4 +1,4 @@
-﻿namespace AdvancedTopics_Events
+﻿namespace csharp_events
 {
     internal class VideoEventArgs : EventArgs
     {
