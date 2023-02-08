@@ -1,10 +1,10 @@
 ﻿namespace AdvancedTopics_Events
 {
-    public class MessageService
+    internal class MessageService
     {
-        public void OnVideoEncoded(object souce, EventArgs args)
+        public void OnVideoEncoded(object souce, VideoEventArgs args)
         {
-            Console.WriteLine("Sending a text message...");
+            Console.WriteLine($"Sending a text message... {args.Video?.Title}");
         }
     }
 }
