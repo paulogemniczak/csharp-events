@@ -19,10 +19,7 @@
 
         protected virtual void OnVideoEconded(Video video)
         {
-            if (VideoEncoded != null)
-            {
-                VideoEncoded(this, new VideoEventArgs { Video = video });
-            }
+            VideoEncoded?.Invoke(this, new VideoEventArgs { Video = video });
         }
     }
 }

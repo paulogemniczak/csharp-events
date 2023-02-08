@@ -1,9 +1,9 @@
 ﻿using AdvancedTopics_Events;
 
 Video video = new() { Title = "teste.mp4" };
-VideoEncoder encoder = new(); // publisher
-MailService mailService = new(); //subscriber
-MessageService messageService = new(); //subscriber
+VideoEncoder encoder = new();
+MailService mailService = new();
+MessageService messageService = new();
 
 encoder.VideoEncoded += mailService.OnVideoEncoded;
 encoder.VideoEncoded += messageService.OnVideoEncoded;
