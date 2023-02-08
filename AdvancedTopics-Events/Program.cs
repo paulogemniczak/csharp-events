@@ -5,7 +5,7 @@ VideoEncoder encoder = new(); // publisher
 MailService mailService = new(); //subscriber
 MessageService messageService = new(); //subscriber
 
-encoder.VideoEconded += mailService.OnVideoEncoded;
-encoder.VideoEconded += messageService.OnVideoEncoded;
+encoder.VideoEncoded += mailService.OnVideoEncoded;
+encoder.VideoEncoded += messageService.OnVideoEncoded;
 
 encoder.Encode(video);
